@@ -3,6 +3,7 @@
 ## Installation options
 <details>
     <summary>Windows</summary>
+
     - Portable .exe application
     - Installation script
 </details>
