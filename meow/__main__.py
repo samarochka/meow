@@ -1,4 +1,4 @@
-from workflowsplayground import main
+from meow import main
 
 
 if __name__ == '__main__':
