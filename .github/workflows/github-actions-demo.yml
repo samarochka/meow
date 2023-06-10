@@ -65,7 +65,7 @@ jobs:
         run: echo "VERSION=$(poetry version -s)" >> $GITHUB_OUTPUT
 
       - name: Rename package file
-        run: mv dist/meow-${{ steps.version.outputs.VERSION }}-py3-none-any.whl dist/meow-latest-py3-none-any.whl
+        run: mv dist/meow-${{ steps.version.outputs.VERSION }}-py3-none-any.whl dist/meow-universal-py3-none-any.whl
 
       - name: Upload build to storage
         uses: actions/upload-artifact@v3
