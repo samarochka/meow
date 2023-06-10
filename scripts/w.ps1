@@ -28,8 +28,8 @@ Write-Output "Installing application and dependencies"
 Remove-Item meow-universal-py3-none-any.whl
 
 Write-Output ""
-Write-Host "Installed. " -ForegroundColor Green -NoNewline
-Write-Host "Script is availiable at " -NoNewline
+Write-Host "Success! " -ForegroundColor Green -NoNewline
+Write-Host "Application is available by running " -NoNewline
 Write-Host "$pwd\Scripts\meow " -ForegroundColor Cyan
 
 Set-Location ..
