@@ -13,14 +13,11 @@ Remove-Item python.zip
 Write-Output "Configuring embedded core"
 Rename-Item python meow
 Remove-Item meow/python310._pth
-Write-Output "python310.zip
-.
-import site" >> meow/python310._pth
 
 Write-Output "Installing packaging core. This may take a while..."
 Set-Location meow
 Invoke-WebRequest -Uri https://bootstrap.pypa.io/get-pip.py -OutFile get-pip.py
-./python.exe get-pip.py --no-warn-script-location --quiet
+.\python.exe get-pip.py --no-warn-script-location --quiet
 Remove-Item get-pip.py
 
 Write-Output "Downloading application"
